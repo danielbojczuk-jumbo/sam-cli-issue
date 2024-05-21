@@ -28,6 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12.3' 
+          terraform_wrapper: false
       - run: |
             #docker buildx build --platform linux/amd64 --tag sam-builder --progress plain .
             git clone https://github.com/danielbojczuk/aws-sam-cli
