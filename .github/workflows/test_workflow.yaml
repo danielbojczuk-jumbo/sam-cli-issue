@@ -33,4 +33,4 @@ jobs:
             cd aws-sam-cli
             make init
             samdev --version
-            #cd $GITHUB_WORKSPACE/terraform && sam build
+            cd $GITHUB_WORKSPACE/terraform && samdev build
