@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: '3.12.3' 
       - run: |
-            docker buildx build --platform linux/amd64 --tag sam-builder --progress plain .
+            #docker buildx build --platform linux/amd64 --tag sam-builder --progress plain .
             https://github.com/aws/aws-sam-cli.git
             python3 -m venv .venv
             source .venv/bin/activate
